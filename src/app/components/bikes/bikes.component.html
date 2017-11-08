@@ -1,0 +1,22 @@
+
+<h1>Our Bikes</h1>
+<hr>
+
+<div class="card-columns">
+
+  <div class="card" *ngFor="let bike of bikes">
+    <img class="card-img-top" [src]="bike.img" [alt]="bike.name">
+    <div class="card-body">
+      <h4 class="card-title">{{bike.name}}</h4>
+      <p class="card-text">{{bike.bio}}</p>
+      <p class="card-text"><small class="text-muted">{{bike.price}}</small></p>
+      <button type="button" class="btn btn-outline-success btn-block">See More</button>
+    </div>
+  </div>
+
+
+
+
+
+
+</div>
